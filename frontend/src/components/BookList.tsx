@@ -9,13 +9,11 @@ export default function BookList({ book }: Props) {
         <>
             <article
                 key={Math.random()}
-                className="p-6 mb-4 grid place-items-center bg-white rounded-lg shadow-md w-[300px] border-2 border-gray-200 gap-4 h-[700px] lg:w-[500px] lg:h-[900px]"
+                className="p-6 mb-4 grid place-items-center bg-white rounded-md shadow-md w-[300px] border border-gray-200 gap-4 h-[700px] lg:w-[500px] lg:h-[900px]"
             >
-                <h2 className="mb-2 text-2xl font-bold">{book.title}</h2>
-                <h3 className="mb-2 text-lg font-semibold">{book.name}</h3>
-                <p className="mb-2 text-gray-600">
-                    Publication Year: {book.publication_year}
-                </p>
+                <h2 className="mb-2 text-3xl font-bold border-b-2 border-black text-center">
+                    {book.title}
+                </h2>
 
                 {book.image && (
                     <img
